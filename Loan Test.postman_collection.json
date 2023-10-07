@@ -1,0 +1,602 @@
+{
+	"info": {
+		"_postman_id": "8e6ec708-2ac8-4514-883d-17b6e019e7d4",
+		"name": "Loan Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23209857"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"customerName\": \"Brad Scott\",\n      \"phoneNumber\": \"(206) 686-1355\",\n      \"address\": \"400 N Normandie Ave, Ohio, CA 90010\",\n      \"loanAmount\": \"8000\",\n      \"interest\": \"9\",\n      \"loanTermYears\": \"2\",\n       \"loanType\": \"Student Loan\",\n      \"description\": \"Student loan for Brad Scott\",\n      \"createdDate\": \"2022-10-23\",\n       \"insertedDate\":\"2022-10-23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/loans/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n     \"customerName\": \"Rocky Balboa\",\n      \"phoneNumber\": \"(206) 686-1354\",\n      \"address\": \"400 N Normandie Ave, Chicago, CA 90010\",\n      \"loanAmount\": \"8000\",\n      \"interest\": \"9\",\n      \"loanTermYears\": \"2\",\n      \"loanType\": \"Auto Loan\",\n      \"description\": \"Auto loan for Daniel Nancy\",\n      \"createdDate\": \"2022-10-23\",\n       \"insertedDate\":\"2022-10-23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/loans/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customerName\": \"John Jennifer\",\n      \"phoneNumber\": \"(206) 686-1352\",\n      \"address\": \"400 N Normandie Ave, Boston, CA 90010\",\n      \"loanAmount\": \"3000\",\n      \"interest\": \"7\",\n      \"loanTermYears\": \"6\",\n      \"loanType\": \"Personal Loan\",\n      \"description\": \"Personal loan for John Jennifer\",\n      \"createdDate\": \"2022-10-23\",\n       \"insertedDate\":\"2022-10-23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/loans/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customerName\": \"James Mary\",\n        \"phoneNumber\": \"(206) 686-1351\",\n        \"address\": \"400 N Normandie Ave, San Diego, CA 90010\",\n        \"loanAmount\": \"2000\",\n        \"interest\": \"3\",\n        \"loanTermYears\": \"4\",\n        \"loanType\": \"Mortgage Loan\",\n        \"description\": \"Mortgage loan for James Mary\",\n      \"createdDate\": \"2022-10-23\",\n       \"insertedDate\":\"2022-10-23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/loans/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customerName\": \"Fred Wrenn\",\n      \"phoneNumber\": \"(206) 686-1350\",\n      \"address\": \"400 N Normandie Ave, San Francisco, CA 90010\",\n      \"loanAmount\": \"1000\",\n      \"interest\": \"6\",\n      \"loanTermYears\": \"5\",\n      \"loanType\": \"Student Loan\",\n      \"description\": \"Student loan for Fred Wrenn\",\n      \"createdDate\": \"2022-10-23\",\n       \"insertedDate\":\"2022-10-23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"63551c9790d6f2e43ebb65d6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loans",
+								"63551c9790d6f2e43ebb65d6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "388"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"184-o0GU5YfbdZIR86EL7mQ+yiXjFEQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Oct 2022 11:49:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"loan\": {\n            \"_id\": \"63551c9790d6f2e43ebb65d6\",\n            \"customerName\": \"Brad Scott\",\n            \"phoneNumber\": \"(206) 686-1355\",\n            \"address\": \"400 N Normandie Ave, Ohio, CA 90010\",\n            \"loanAmount\": 8000,\n            \"interest\": 9,\n            \"loanTermYears\": 2,\n            \"loanType\": \"Student Loan\",\n            \"description\": \"Student loan for Brad Scott\",\n            \"createdDate\": \"2022-10-23T00:00:00.000Z\",\n            \"insertedDate\": \"2022-10-23T00:00:00.000Z\",\n            \"__v\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"Brad Scott\",\n      \"phoneNumber\": \"(206) 686-1355\",\n      \"address\": \"400 N Normandie Ave, Chicago, CA 90010\",\n      \"loanAmount\": \"5000\",\n      \"interest\": \"10\",\n      \"loanTermYears\": \"1\",\n       \"loanType\": \"Student Loan\",\n      \"description\": \"Student loan for Brad Scott\",\n      \"createdDate\": \"2022-10-23\",\n       \"insertedDate\":\"2022-10-23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"63551c9790d6f2e43ebb65d6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerName\": \"Brad Scott\",\n      \"phoneNumber\": \"(206) 686-1355\",\n      \"address\": \"400 N Normandie Ave, Chicago, CA 90010\",\n      \"loanAmount\": \"5000\",\n      \"interest\": \"10\",\n      \"loanTermYears\": \"1\",\n       \"loanType\": \"Student Loan\",\n      \"description\": \"Student loan for Brad Scott\",\n      \"createdDate\": \"2022-10-23\",\n       \"insertedDate\":\"2022-10-23\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loans",
+								"63551c9790d6f2e43ebb65d6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "392"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"188-iGvTdmp4OzgcVyajVtRJ1XD2ImI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Oct 2022 12:16:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"loan\": {\n            \"_id\": \"63551c9790d6f2e43ebb65d6\",\n            \"customerName\": \"Brad Scott\",\n            \"phoneNumber\": \"(206) 686-1355\",\n            \"address\": \"400 N Normandie Ave, Chicago, CA 90010\",\n            \"loanAmount\": 5000,\n            \"interest\": 10,\n            \"loanTermYears\": 1,\n            \"loanType\": \"Student Loan\",\n            \"description\": \"Student loan for Brad Scott\",\n            \"createdDate\": \"2022-10-23T00:00:00.000Z\",\n            \"insertedDate\": \"2022-10-23T00:00:00.000Z\",\n            \"__v\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"63551c9790d6f2e43ebb65d6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/loans/63551c9790d6f2e43ebb65d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loans",
+								"63551c9790d6f2e43ebb65d6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "392"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"188-iGvTdmp4OzgcVyajVtRJ1XD2ImI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Oct 2022 12:21:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"loan\": {\n            \"_id\": \"63551c9790d6f2e43ebb65d6\",\n            \"customerName\": \"Brad Scott\",\n            \"phoneNumber\": \"(206) 686-1355\",\n            \"address\": \"400 N Normandie Ave, Chicago, CA 90010\",\n            \"loanAmount\": 5000,\n            \"interest\": 10,\n            \"loanTermYears\": 1,\n            \"loanType\": \"Student Loan\",\n            \"description\": \"Student loan for Brad Scott\",\n            \"createdDate\": \"2022-10-23T00:00:00.000Z\",\n            \"insertedDate\": \"2022-10-23T00:00:00.000Z\",\n            \"__v\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/loans/6355bb949aa724ab27ad8f07",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/6355bb949aa724ab27ad8f07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"6355bb949aa724ab27ad8f07"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/loans/6355bb949aa724ab27ad8f07",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/loans/6355bb949aa724ab27ad8f07",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loans",
+								"6355bb949aa724ab27ad8f07"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20-bff5r/a5MyNNWy9hjn8a8pOLDxA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Oct 2022 22:14:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/loans/6355bb949aa724ab27ad8f07",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/6355bb949aa724ab27ad8f07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"6355bb949aa724ab27ad8f07"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/loans/6355bb949aa724ab27ad8f07",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/loans/6355bb949aa724ab27ad8f07",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loans",
+								"6355bb949aa724ab27ad8f07"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-KEFKosfmGlwCcgQdG1MpFD/LD4g\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Oct 2022 22:25:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"fail\",\n    \"message\": {}\n}"
+				}
+			]
+		}
+	]
+}
